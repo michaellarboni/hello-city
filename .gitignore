@@ -9,3 +9,8 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+###> idea project ###
+.idea/
+.idea/workspace.xml
+### end custom env app ignores ###
