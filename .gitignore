@@ -13,4 +13,5 @@
 ###> idea project ###
 .idea/
 .idea/workspace.xml
+/node_modules/
 ### end custom env app ignores ###
