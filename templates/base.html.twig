@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ app.request.locale }}">
     <head>
-        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@1.0/dist/tailwind.min.css" rel="stylesheet">
         <title>{% block title %}Hello City !!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
     <body class="flex flex-col justify-between items-center min-h-screen text-gray-700">
-        <main role="main" class="my-6 flex flex-col justify-center items-center">
+        <main class="my-6 flex flex-col justify-center items-center">
             {% block body %}{% endblock %}
         </main>
         <footer class="text-gray-400 my-6">
