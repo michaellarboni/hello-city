@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ app.request.locale }}">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <title>{% block title %}Hello City !!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+    <body class="flex flex-col justify-between items-center min-h-screen">
+        <main role="main" class="my-6 flex flex-col justify-center items-center">
+            {% block body %}{% endblock %}
+        </main>
+        <footer class="text-gray-400 my-6">
+            {{ include('/layouts/partials/_footer.html.twig') }}
+        </footer>
+            {% block javascripts %}{% endblock %}
+        </body>
 </html>
