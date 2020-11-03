@@ -1,10 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title 'Hello City !' %}
+{% block title ' ' ~ parent() ~ ' Marseille !' %}
 
 {% block body %}
-    <img src="/images/placeholder.png" alt="France flag" class="rounded mt-12 h-32 shadow-md">
-    <h1 class="mt-5 text-3xl sm:text-5xl font-semibold text-indigo-600">Hello from France !</h1>
+    <img src="/images/marseille.png" alt="France flag" class="rounded mt-12 h-full shadow-md">
+    <h1 class="mt-5 text-3xl sm:text-5xl font-semibold text-center text-blue-400">Bonjour de Marseille !</h1>
 
     <p class="text-lg">Il est actuellement {{ 'now'|date('H:i') }}</p>
 {% endblock %}
